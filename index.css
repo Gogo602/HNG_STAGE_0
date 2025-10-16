@@ -15,7 +15,7 @@ body{
     padding: 0px 10px;
 }
 
-[data-testid="main-card"]{
+[data-testid="test-profile-card"]{
     border: 1px solid #ffffff;
     padding: 20px;
     border-radius: 5px;
@@ -23,16 +23,32 @@ body{
     text-align: center;
     width: 80vh;
 }
-[data-testid="card-header"]{
-    margin-bottom: 50px;
+[data-testid="test-user-avatar"]{
+    width: 150px;
+    height: 150px;
+    border-radius: 80px;
 }
 
-[data-testid="about-me"]{
-    margin-top: 50px;
+[data-testid="test-user-time"]{
+    margin-top: 6px;
+}
+[data-testid="test-user-social-links"]>ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    gap: 6px;
+    margin-top: 6px;
 }
 
-[data-testid="about-me"]>h4{
-    border-bottom: 2px solid #000000;
+[data-testid="test-user-social-links"]>ul>li{
+    border: 1px solid blue;
+    border-radius: 4px;
+    padding: 0px 5px;
+}
+
+a{
+    text-decoration: none;
 }
 
 h5{
@@ -41,22 +57,18 @@ h5{
     text-decoration: underline;
 }
 
-[data-testid="about-me"]>p{
-    text-align: left;
-}
-
-[data-testid="list-skills"]{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 5px;
-}
-[data-testid="list-skills"]>li{
+li{
     list-style-type: none;
-    border: 1px solid gray;
-    padding: 0px 5px;
-    border-radius: 5px;
 }
 
+section{
+    text-align: left;
+    margin-top: 5px;
+}
+
+section>h3{
+    text-decoration: underline;
+}
 
 
 /* Media query for screens with a maximum width of 768px */

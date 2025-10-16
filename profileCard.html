@@ -9,31 +9,64 @@
 </head>
 
 <body>
-    <main data-testid="main-card">
-        <header data-testid="card-header">
-            <h3>Gogo Benson</h3>
-        </header>
-        <section data-testid="card-user">
-            <img src="" alt="gogo">
-            <h3>Frontend Developer</h3>
-            <p>Rivers, Nigeria</p>
-        </section>
-        <section data-testid="about-me">
-            <h4>Resume</h4>
-            <h5>About Me</h5>
-            <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis eius esse distinctio a, asperiores sequi
-                ratione nisi eos consequuntur. Recusandae molestias cum ullam! Architecto asperiores possimus omnis a
-                modi odio.
-            </p>
-        </section>
-        <section data-testid="my-skills">
-            <h5>My Skills</h5>
-            <ul data-testid="list-skills">
+    <article data-testid="test-profile-card">
 
+        <figure>
+            <img src="assets/Gogo.jpg" alt="Gogo Benson" data-testid="test-user-avatar">
+        </figure>
+
+        <h2 data-testid="test-user-name">Gogo Benson</h2>
+
+        <p data-testid="test-user-bio">
+            I am a passionate frontend developer dedicated to creating accessible, responsive, and visually appealing
+            web experiences using modern web standards.
+        </p>
+
+        <nav data-testid="test-user-social-links">
+            <ul>
+                <li>
+                    <a href="https://github.com/Gogo602" target="_blank" rel="noopener noreferrer"
+                        data-testid="test-user-social-github">
+                        GitHub
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/gogo-benson" target="_blank" rel="noopener noreferrer"
+                        data-testid="test-user-social-linkedin">
+                        Linkedln
+                    </a>
+                </li>
+                <li>
+                    <a href="https://x.com/gogomarosi" target="_blank" rel="noopener noreferrer"
+                        data-testid="test-user-social-twitter">
+                        Twitter
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <p data-testid="test-user-time"></p>
+
+        <section>
+            <h3>Hobbies</h3>
+            <ul data-testid="test-user-hobbies">
+                <li>Coding</li>
+                <li>Reading Sci-Fi</li>
+                <li>Playing Chess</li>
             </ul>
         </section>
-    </main>
+
+        <section>
+            <h3>Dislikes</h3>
+            <ul data-testid="test-user-dislikes">
+                <li>Slow internet</li>
+                <li>Lack of documentation</li>
+                <li>Inconsistent design</li>
+            </ul>
+        </section>
+
+    </article>
+
     <script src="main.js"></script>
 </body>
 
