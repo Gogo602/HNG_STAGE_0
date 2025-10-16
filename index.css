@@ -1,0 +1,74 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #000000ea;
+    color: #000000ea;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 0px 10px;
+}
+
+[data-testid="main-card"]{
+    border: 1px solid #ffffff;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #ffffff;
+    text-align: center;
+    width: 80vh;
+}
+[data-testid="card-header"]{
+    margin-bottom: 50px;
+}
+
+[data-testid="about-me"]{
+    margin-top: 50px;
+}
+
+[data-testid="about-me"]>h4{
+    border-bottom: 2px solid #000000;
+}
+
+h5{
+    margin: 10px 0px 10px 0px;
+    text-align: left;
+    text-decoration: underline;
+}
+
+[data-testid="about-me"]>p{
+    text-align: left;
+}
+
+[data-testid="list-skills"]{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+[data-testid="list-skills"]>li{
+    list-style-type: none;
+    border: 1px solid gray;
+    padding: 0px 5px;
+    border-radius: 5px;
+}
+
+
+
+/* Media query for screens with a maximum width of 768px */
+@media screen and (max-width: 768px) {
+    body{
+    min-height: 90vh;
+    padding: 0px 10px;
+    margin-bottom: 30px;
+}
+}
+
+/* Media query for screens with a maximum width of 480px (e.g., smartphones) */
+@media screen and (max-width: 480px) {
+  
+}
