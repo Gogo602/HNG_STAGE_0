@@ -1,0 +1,83 @@
+/* all elements on the page */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* body */
+body{
+    background-color: #000000ea;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 0px 10px;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* all li */
+li{
+    list-style-type: none;
+}
+
+/* all sections */
+section{
+    text-align: left;
+    margin-top: 20px;
+}
+
+/* data-testid="test-profile-card" - the card container itself */
+[data-testid="test-contact-page"]{
+    border: 2px solid #2c3ee0;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #f5f2f2;
+    text-align: center;
+    width: 80vh;
+    color: #000000ea;
+    margin: 10px 0px;
+}
+.back-btn{
+    text-align: left;
+}
+
+label{
+    display: block;
+    text-align: left;
+    padding-left: 22px;
+    margin-top: 5px;
+}
+
+input{
+    width: 90%;
+    padding: 9px 7px;
+    border-radius: 5px;
+}
+
+textarea{
+    width: 90%;
+    padding: 9px 7px;
+    border-radius: 5px;
+}
+
+[data-testid="test-contact-submit"]{
+    width: 90%;
+    padding: 10px 7px;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: blue;
+    color: white;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+
+#contact-form span{
+    text-align: right;
+    padding-right: 20px;
+}

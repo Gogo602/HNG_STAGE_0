@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/contact.css">
+    <title>Contact Me</title>
+</head>
+
+<body>
+
+    <main data-testid="test-contact-page">
+
+        <p class="back-btn">
+            <a href="../index.html">&larr; Back </a>
+        </p>
+
+        <h2>Contact Me</h2>
+
+        <div data-testid="test-contact-success" style="display: none;">
+            <p>Thank you for your message! We will get back to you shortly.</p>
+        </div>
+
+        <form id="contact-form">
+
+            <div>
+                <label for="fullName">Full Name</label>
+                <input type="text" id="fullName" data-testid="test-contact-name"
+                    aria-describedby="test-contact-error-name" required>
+                <span data-testid="test-contact-error-name" style="color: red; display: none;"></span>
+            </div>
+
+            <div>
+                <label for="email">Email</label>
+                <input type="email" id="email" data-testid="test-contact-email"
+                    aria-describedby="test-contact-error-email" required>
+                <span data-testid="test-contact-error-email" style="color: red; display: none;"></span>
+            </div>
+
+            <div>
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" data-testid="test-contact-subject"
+                    aria-describedby="test-contact-error-subject" required>
+                <span data-testid="test-contact-error-subject" style="color: red; display: none;"></span>
+            </div>
+
+            <div>
+                <label for="message">Message</label>
+                <textarea id="message" data-testid="test-contact-message" aria-describedby="test-contact-error-message"
+                    rows="5" required></textarea>
+                <span data-testid="test-contact-error-message" style="color: red; display: none;"></span>
+            </div>
+
+            <button type="submit" data-testid="test-contact-submit">
+                Send Message
+            </button>
+
+        </form>
+    </main>
+
+    <script src="../js/contact.js"></script>
+</body>
+
+</html>
